@@ -44,7 +44,7 @@ public class BookRepositoryTest {
 	public void updateTitleById() {
 		
 		System.out.println("\nUpdating one of the books.. ");
-		bookRepository.updateTitleById(" The Tempset", 8);
+		bookRepository.updateTitleById(" The Tempset", 9L);
 		
 	}
 	@Test
@@ -53,8 +53,7 @@ public class BookRepositoryTest {
 		System.out.println("\nRetriving all books..");
 		List<Book> books= bookRepository.findAllNameQuery();
 		System.out.println("\nOUTPUT:\n" + books.toString());
-		
-	}
+		}
 	@Test
 	public void deleteByTitle() {
 		
